@@ -34,13 +34,13 @@ int main()
 	for (i=0; i<6; i++) 
 		toSend[i] = 0xFF; 
 
-	// Let the MAC Address be ab:cd:ef:gh:ij:kl 
-	mac[0] = 0xab; // 1st octet of the MAC Address 
-	mac[1] = 0xcd; // 2nd octet of the MAC Address 
-	mac[2] = 0xef; // 3rd octet of the MAC Address 
-	mac[3] = 0xgh; // 4th octet of the MAC Address 
-	mac[4] = 0xij; // 5th octet of the MAC Address 
-	mac[5] = 0xkl; // 6th octet of the MAC Address 
+	//  MAC Address is: d7:5d:e2:a4:0a:58 
+	mac[0] = 0xd7; // 1st octet of the MAC Address 
+	mac[1] = 0x5d; // 2nd octet of the MAC Address 
+	mac[2] = 0xe2; // 3rd octet of the MAC Address 
+	mac[3] = 0xa4; // 4th octet of the MAC Address 
+	mac[4] = 0x0a; // 5th octet of the MAC Address 
+	mac[5] = 0x58; // 6th octet of the MAC Address 
 
 	for (i=1; i<=16; i++) 
 		memcpy(&toSend[i*6], &mac, 6*sizeof(unsigned char)); 
